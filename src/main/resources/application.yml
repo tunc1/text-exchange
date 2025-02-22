@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/text_exchange
+    username: postgres
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+encryption:
+  salt: salt
+  iteration-count: 65536
+  key-length: 256
+text-delete-schedule:
+  minutes-to-delete: 5
