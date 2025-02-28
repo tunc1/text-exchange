@@ -22,7 +22,7 @@ public class EncryptionService
 	private final String TRANSFORMATION="AES/CBC/PKCS5Padding";
 	private final String ENCODING="UTF-8";
 	@Value("${encryption.salt}")
-	private String salt="salt";
+	private String salt;
 	@Value("${encryption.iteration-count}")
 	private int iterationCount;
 	@Value("${encryption.key-length}")
